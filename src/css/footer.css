@@ -1,0 +1,11 @@
+.footer-content {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+/* background-color: #800020; */
+}
+
+.footer {
+margin-top: auto;
+text-align: center;
+}

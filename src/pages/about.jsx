@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-// import './Slideshow.css';
-
+import "../css/about.css"
 const images = [
-  '../public/images/placeholder1.jpg',
-  '../public/images/placeholder2.jpg',
-  '../public/images/placeholder3.jpg',
+  '../public/images/image2.jpg',
+  '../public/images/image5.jpg',
+  '../public/images/image7.jpg',
 ];
 
 const Slideshow = () => {
@@ -19,10 +18,15 @@ const Slideshow = () => {
   };
 
   return (
+    <div className='about' id="about">
     <div className="slideshow-container">
-      <button onClick={goToPrevSlide}>Previous</button>
-      <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
-      <button onClick={goToNextSlide}>Next</button>
+      <button onClick={goToPrevSlide}>&larr;</button>
+      <img className="slideshow-img" src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      <button onClick={goToNextSlide}>&rarr;</button>
+    </div>
+      <div>
+        <p>Here at Petes Detailing, we prioritize our customer service</p>
+      </div>
     </div>
   );
 };
