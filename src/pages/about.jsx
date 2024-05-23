@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import "../css/about.css"
 const images = [
-  '../public/images/image2.jpg',
-  '../public/images/image5.jpg',
-  '../public/images/image7.jpg',
+  '../images/image2.jpg',
+  '../images/image5.jpg',
+  '../images/image7.jpg',
 ];
 
 const Slideshow = () => {
